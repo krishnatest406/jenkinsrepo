@@ -10,8 +10,8 @@ public class Class1 {
 
 	@Test
 	public void getpageTitleOfFb() throws Exception {
-		WebDriverManager.chromedriver().setup();
-		RemoteWebDriver driver=new ChromeDriver();
+		WebDriverManager.edgedriver().setup();
+		RemoteWebDriver driver=new EdgeDriver();
 		driver.manage().window().maximize();
 		driver.get("https://www.facebook.com/");
 		if(driver.getTitle().contains("facebook")) {
